@@ -12,6 +12,7 @@ function(input, output) {
     return(data)
   })
 
+  output$contents1 <- renderPlot({
     datosts <-data_l()
     #M2=auto.arima(datosts)
     #M2F=forecast(M2,h=12)   # cantidad a pronosticar
